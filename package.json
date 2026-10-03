@@ -1,0 +1,31 @@
+{
+  "name": "@anatoliacore/sdk",
+  "version": "1.0.0",
+  "description": "Official TypeScript SDK for the AnatoliaCore Public API",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furkangogus/Cloud-Console.git",
+    "directory": "sdk/typescript"
+  },
+  "bugs": "https://github.com/furkangogus/Cloud-Console/issues",
+  "homepage": "https://console.anatoliacore.com",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "pretest": "npm run build",
+    "test": "node --test tests/*.test.mjs",
+    "prepack": "npm run build"
+  },
+  "engines": {"node": ">=20"},
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "license": "UNLICENSED"
+}
